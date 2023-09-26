@@ -1,0 +1,66 @@
+.Section2 {
+    height: 500px;
+    width: auto;
+    background-color: rgb(77, 174, 238);
+    margin: 40px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr auto; /* Crea dos columnas, una para los Cards y otra para el LateralBar */
+    position: relative; /* Establece la posición relativa en el contenedor .Section2 */
+    overflow: hidden; /* Evita que los elementos que se desbordan sean visibles */
+}
+
+.Cards {
+    display: flex;
+    /* Cambia flex-direction a row para mostrar las tarjetas en horizontal */
+    flex-direction: row;
+}
+
+.Card {
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    height: 300px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.253);
+    /* Cambia flex-direction a column para mostrar los elementos internos en vertical */
+    flex-direction: column;
+    display: flex;
+}
+
+.ImgMantenimiento {
+    width: 240px;
+    height: 250px;
+}
+
+.ImgRefrigeracion {
+    width: 240px;
+    height: 250px;
+}
+
+.LateralBar {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.26);
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+.LateralBar:nth-child(1) {
+    top: 0;
+    left: 100%; /* Cambia el valor left para que el primer LateralBar esté en la parte derecha */
+    transform: translateX(10px); /* Agrega un pequeño espacio entre el LateralBar y el borde derecho */
+}
+
+.LateralBar:nth-child(2) {
+    top: 0;
+}
+
+.Img {
+    margin: 5px;
+    width: 170px;
+    height: 150px;
+}
+
+
