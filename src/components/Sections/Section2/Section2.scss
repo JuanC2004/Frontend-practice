@@ -7,7 +7,8 @@
     display: grid;
     grid-template-columns: 1fr auto; /* Crea dos columnas, una para los Cards y otra para el LateralBar */
     position: relative; /* Establece la posición relativa en el contenedor .Section2 */
-    overflow: hidden; /* Evita que los elementos que se desbordan sean visibles */
+    overflow: hidden; 
+    z-index: -1;/* Evita que los elementos que se desbordan sean visibles */
 
 }
 
